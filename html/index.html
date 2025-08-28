@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- customized css  -->
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+
+      *{
+        margin: 0;
+        padding: 0;
+      }
+     /* for navbar */
+  .bg-darkblue {
+    background-color: #262b75 !important; 
+  }
+
+  /* Navbar link color */
+  .navbar-nav .nav-link {
+    color: #ffffff !important; 
+    transition: 0.3s ease;
+  }
+
+  /* Hover effect */
+  .navbar-nav .nav-link:hover {
+    color: #a690c9 !important;
+    font-size: 1.01rem; 
+  }
+  /* end navbar */
+      body{
+        background-color: rgb(22, 11, 70);
+        color: white;
+      }
+
+
+
+
+      /* for right section and left section main */
+      .firstSection{
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+        margin: 80px 0; 
+      }
+
+      .firstSection>div{
+        width: 35%;
+        
+      }
+      .leftSection{
+        font-size: 3rem;
+        
+        /* background-color: red; */
+      }
+      .leftSection div{
+        font-size: large;
+      }
+      .rightSection img{
+        width: 75%;
+        /* background-color: red; */
+        
+        
+      }
+      .blue {
+  background: linear-gradient(to right, rgb(144, 217, 241), rgb(239, 150, 224));
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; 
+  color: transparent; }
+      .leftSection div #element{
+        color: rgba(237, 161, 224, 0.881);
+      }
+
+/* Custom button for hero section */
+button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background: rgb(28, 49, 119);
+  box-shadow: 0 0 30px 5px rgba(25, 74, 97, 0.815);
+  transition: all 0.2s ease-out;
+}
+
+button::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0;
+  opacity: 0;
+  /* background: #bb5d5d; */
+  box-shadow: 0 0 50px 30px #dcd6da;
+  transform: skewX(-20deg);
+}
+
+button:hover::before {
+  animation: sh02 0.5s linear;
+}
+
+@keyframes sh02 {
+  0% { opacity: 0; left: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; left: 100%; }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.2s ease-in;
+}
+
+
+/* second section */
+/* .secondSection{
+
+} */
+/* Second section heading */
+.secondSection h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+/* Card container */
+.secondSection .row {
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Cards styling */
+.secondSection .card {
+  background: rgba(255, 255, 255, 0.05); /* transparent but visible */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Make all card images fit uniformly */
+.secondSection .card-img-top {
+  width: 100%;
+  height: 200px;      /* fixed height for consistency */
+  object-fit: cover;  /* fills the card area nicely without stretching */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Card hover effect */
+.secondSection .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Card button */
+.secondSection .card .btn-primary {
+  background: rgba(61, 106, 255, 0.7);
+  border: none;
+}
+
+.secondSection .card .btn-primary:hover {
+  background: rgba(61, 106, 255, 1);
+}
+
+
+/* end */
+
+
+
+/* footer */
+
+footer{
+ 
+  background-color: #201848;
+  height: 233px;
+}
+.footer{
+   display: flex;
+   justify-content: space-evenly;
+   padding: 23px 122px;
+}
+.footer ul{
+  list-style: none;
+}
+.footer > div{
+  width: 223px;
+}
+/* end footer */
+footer .footer-rights{
+  text-align: center;
+}
+    </style>
+    
+  </head>
+  <body>
+ <header>
+  <!-- nav section start -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-darkblue">
+    <div class="container">
+      <!-- Logo on the left -->
+      <a class="navbar-brand fs-4" href="#">Portfolio</a>
+
+      <!-- Toggle button for mobile -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item me-3" id="home">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+
+          <li class="nav-item me-3">
+            <a class="nav-link" href="fullstack.html">Fullstack</a>
+          </li>
+
+          <li class="nav-item me-3">
+            <a class="nav-link" href="html_page.html">HTML</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="css_page.html">CSS</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="bootstrap_page.html">Bootstrap</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="js_page.html">JavaScript</a>
+          </li>
+          <!-- toggle-switch start -->
+        <div class="toggle-switch">
+          <label class="switch-label">
+            <input type="checkbox" class="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div> 
+        <!-- toggle switch end -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- nav section end -->
+</header>
+
+<main>
+  <section class="firstSection">
+    <div class="leftSection">
+      Master <span class="blue">Fullstack Development </span>
+      <div>Learn, Build and Deploy
+      <span id="element"></span>.</div>
+      
+      <button>Explore more</button>
+    </div>
+    <div class="rightSection">
+      <img src="/bg.png" alt="fullstack">
+    </div>
+  </section>
+  
+<section class="secondSection py-4">
+  <div class="container">
+    <h1>Explore What You Can Learn</h1>
+
+    <div class="row g-4 justify-content-center">
+      <!-- 1st card: Fullstack -->
+      <div class="col-md-5 col-lg-4">
+        <div class="card h-100">
+          <img src="/images/fullstackcard.png" class="card-img-top" alt="Fullstack">
+          <div class="card-body">
+            <h5 class="card-title">Fullstack Development</h5>
+            <p class="card-text">Combine frontend and backend skills to build real-world applications.</p>
+            <a href="#" class=""><button>Learn more</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd card: HTML -->
+      <div class="col-md-5 col-lg-4">
+        <div class="card h-100">
+          <img src="/images/html.jpg" class="card-img-top" alt="HTML">
+          <div class="card-body">
+            <h5 class="card-title">HTML</h5>
+            <p class="card-text">Learn the structure of websites and web pages with HTML fundamentals.</p>
+           <a href="#" class=""><button>Learn more</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd card: CSS -->
+      <div class="col-md-5 col-lg-4">
+        <div class="card h-100">
+          <img src="/images/css1.jpg" class="card-img-top" alt="CSS">
+          <div class="card-body">
+            <h5 class="card-title">CSS</h5>
+            <p class="card-text">Style your websites with CSS, including layouts, colors, and animations.</p>
+            <a href="#" class=""><button>Learn more</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4th card: Bootstrap -->
+      <div class="col-md-5 col-lg-4">
+        <div class="card h-100">
+          <img src="/images/bootstrapimg.png" class="card-img-top my-9" alt="Bootstrap">
+          <div class="card-body">
+            <h5 class="card-title">Bootstrap</h5>
+            <p class="card-text">Build responsive and modern web pages quickly with Bootstrap components.</p>
+            <a href="#" class=""><button>Learn more</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5th card: JavaScript -->
+      <div class="col-md-5 col-lg-4">
+        <div class="card h-100">
+          <img src="/images/jsimg.png" class="card-img-top" alt="JavaScript">
+          <div class="card-body">
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text">Add interactivity and dynamic functionality to your web projects using JS.</p>
+            <a href="#" class=""><button>Learn more</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+</main>
+
+
+<footer>
+  <div class="footer">
+    
+    <div class="footer-first">
+      <h3>Fullstack Dev Portfolio</h3>
+    </div>
+
+    <div class="footer-second">
+      <ul>
+        <li>Home</li>
+        <li>Fullstack</li>
+        <li>HtMl</li>
+        <li>Css</li>
+        <li>Bootsrap</li>
+      </ul>
+    </div>
+
+    <div class="footer-third">
+      <ul>
+        <li>Home</li>
+        <li>Fullstack</li>
+        <li>HtMl</li>
+        <li>Css</li>
+        <li>Bootsrap</li>
+      </ul>
+    </div>
+    
+    <div class="footer-fourth">
+      <ul>
+        <li>Home</li>
+        <li>Fullstack</li>
+        <li>HtMl</li>
+        <li>Css</li>
+        <li>Bootsrap</li>
+      </ul>
+    </div>     
+  </div>
+  <div class="footer-rights">
+      www.fullstackportfolio.com| All rights reserved
+    </div>
+</footer>
+
+<!-- typed js -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['HTML','CSS','Bootstrap','JavaScript'],
+      typeSpeed: 50,
+    });
+  </script>
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- customized js -->
+    <script src="/scripts.js"></script>
+  </body>
+
+
+</html>
