@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fullstack Development</title>
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- nav section start -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-darkblue">
+        <div class="container">
+          <!-- Logo on the left -->
+          <a class="navbar-brand fs-4" href="index.html">Portfolio</a>
+
+          <!-- Toggle button for mobile -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item me-3" id="home">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item me-3">
+                <a class="nav-link" href="fullstack.html">Fullstack</a>
+              </li>
+
+              <li class="nav-item me-3">
+                <a class="nav-link" href="html_page.html">HTML</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="css_page.html">CSS</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="bootstrap_page.html">Bootstrap</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="js_page.html">JavaScript</a>
+              </li>
+              <!-- toggle-switch start -->
+              <div class="toggle-switch">
+                <label class="switch-label">
+                  <input type="checkbox" class="checkbox" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <!-- toggle switch end -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- nav section end -->
+    </header>
+
+    <!-- Introduction Section -->
+    <!-- JavaScript Mastery Section -->
+    <section class="fullstack-section py-5 text-center">
+      <div class="container">
+        <!-- Title -->
+        <h2 class="section-title mb-4">Fullstack Mastery</h2>
+        <p class="section-description mx-auto mb-5">
+          Fullstack developers work across the entire web development stack —
+          from crafting beautiful interfaces to managing servers and databases
+          behind the scenes.
+        </p>
+
+        <!-- Feature Cards -->
+        <div class="row justify-content-center gy-4 mb-5">
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100">
+              <h4><i class="fa-solid fa-laptop-code"></i> Frontend</h4>
+              <p>
+                The client-side of applications that users interact with
+                directly. Focuses on user experience, responsiveness, and visual
+                design using HTML, CSS, JavaScript, and frameworks like React or
+                Vue.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100">
+              <h4><i class="fa-solid fa-gears"></i> Backend</h4>
+              <p>
+                The server-side logic that powers the application. Handles
+                requests, authentication, APIs, and more using Node.js, Express,
+                Python, or other server tech.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100">
+              <h4><i class="fa-solid fa-database"></i> Database</h4>
+              <p>
+                Stores and manages data reliably. Includes relational (MySQL,
+                PostgreSQL) and non-relational (MongoDB) databases, along with
+                query languages like SQL and Mongoose.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tips -->
+        <h3 class="sub-section-title mt-4 mb-4">
+          Tips to Become a Fullstack Developer
+        </h3>
+
+        <div class="row-tips mb-5">
+          <div
+            class="tip-row glass-tip d-flex flex-column flex-md-row align-items-start p-4 mb-4"
+          >
+            <div class="tip-icon me-md-4 mb-2 mb-md-0"></div>
+            <div>
+              <h5 class="mb-2">Learn the Basics First</h5>
+              <p>
+                Master HTML, CSS, and JavaScript before diving into frameworks.
+                Build static websites to get your fundamentals strong.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="tip-row glass-tip d-flex flex-column flex-md-row align-items-start p-4 mb-4"
+          >
+            <div class="tip-icon me-md-4 mb-2 mb-md-0"></div>
+            <div>
+              <h5 class="mb-2">Understand Client-Server Flow</h5>
+              <p>
+                Learn how data flows between frontend and backend, and how HTTP
+                requests/responses and APIs work.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="tip-row glass-tip d-flex flex-column flex-md-row align-items-start p-4 mb-4"
+          >
+            <div class="tip-icon me-md-4 mb-2 mb-md-0"></div>
+            <div>
+              <h5 class="mb-2">Pick a Stack</h5>
+              <p>
+                Choose one popular stack like MERN (MongoDB, Express, React,
+                Node.js) or LAMP (Linux, Apache, MySQL, PHP).
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="tip-row glass-tip d-flex flex-column flex-md-row align-items-start p-4 mb-4"
+          >
+            <div class="tip-icon me-md-4 mb-2 mb-md-0"></div>
+            <div>
+              <h5 class="mb-2">Master One Thing at a Time</h5>
+              <p>
+                Don’t rush into learning everything. Focus on the frontend
+                first, then backend, then database.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="tip-row glass-tip d-flex flex-column flex-md-row align-items-start p-4 mb-4"
+          >
+            <div class="tip-icon me-md-4 mb-2 mb-md-0"></div>
+            <div>
+              <h5 class="mb-2">Build Projects</h5>
+              <p>
+                Apply your learning by building real-world apps — portfolios,
+                blogs, to-do apps, or clone websites.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feedback -->
+        <div class="feedback-box p-4 mt-5 rounded">
+          <h4>Want more tutorials or examples?</h4>
+          <p>
+            Let me know what you'd like added next — React, Node.js, MongoDB or
+            deployment guides.
+          </p>
+          <a href="contact.html" class="btn btn-outline-light mt-3"
+            >Send Feedback</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer-section">
+      <div
+        class="footer container py-5 d-flex flex-wrap justify-content-between text-light"
+      >
+        <!-- Branding -->
+        <div class="footer-brand mb-4">
+          <h4 class="mb-2">🚀 Fullstack Dev Portfolio</h4>
+          <p>
+            Your go-to resource for fullstack development learning and examples.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fullstack.html">Fullstack</a></li>
+            <li><a href="html_page.html">HTML</a></li>
+            <li><a href="css_page.html">CSS</a></li>
+            <li><a href="bootstrap_page.html">Bootstrap</a></li>
+            <li><a href="js_page.html">JavaScript</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="footer-links mb-4">
+          <h5>Resources</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Code Examples</a></li>
+            <li><a href="#">YouTube Channel</a></li>
+            <li><a href="#">Project Ideas</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact / Social -->
+        <div class="footer-links mb-4">
+          <h5>Contact</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="mailto:developer@example.com">
+                <i class="fas fa-envelope me-2"></i>Email Me
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/yourusername" target="_blank">
+                <i class="fab fa-github me-2"></i>GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/yourusername" target="_blank">
+                <i class="fab fa-facebook me-2"></i>Facebook
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <i class="fas fa-comment-dots me-2"></i>Feedback Form
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-rights text-center text-light py-3 border-top">
+        &copy; 2025 www.fullstackportfolio.com | All rights reserved
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Mastery</title>
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-darkblue">
+        <div class="container">
+          <a class="navbar-brand fs-4" href="index.html">Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item me-3">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="fullstack.html">Fullstack</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="html_page.html">HTML</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="css_page.html">CSS</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="bootstrap_page.html">Bootstrap</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link active" href="#">JavaScript</a>
+              </li>
+              <div class="toggle-switch">
+                <label class="switch-label">
+                  <input type="checkbox" class="checkbox" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- JavaScript Mastery Section -->
+    <section class="fullstack-section py-5 text-center">
+      <div class="container">
+        <!-- Title -->
+        <h2 class="section-title mb-4">JavaScript Mastery</h2>
+        <p class="section-description mx-auto mb-5">
+          JavaScript is the language of the web — enabling interactivity, logic,
+          and dynamic experiences in browsers. It powers everything from
+          animations to full-scale applications.
+        </p>
+
+        <!-- Feature Cards -->
+        <div class="row justify-content-center gy-4 mb-5">
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100">
+              <h4><i class="fa-solid fa-brain"></i> Language Basics</h4>
+              <p>
+                Variables, loops, functions, and objects form the foundation of
+                JavaScript. ES6 introduced modern syntax like arrow functions
+                and let/const.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100">
+              <h4>
+                <i class="fa-solid fa-lines-leaning"></i> DOM Manipulation
+              </h4>
+              <p>
+                Use JavaScript to access and change HTML elements, styles, and
+                attributes on the fly — adding interactivity to web pages with
+                events and animations.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100">
+              <h4><i class="fa-solid fa-earth-asia"></i> APIs & Async</h4>
+              <p>
+                Fetch data from external sources, use JSON, and handle
+                asynchronous operations with callbacks, promises, and
+                async/await for real-time web apps.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tips -->
+        <h3 class="sub-section-title mt-4 mb-4">Tips to Master JavaScript</h3>
+        <div class="row-tips mb-5">
+          <div
+            class="tip-row glass-tip d-flex flex-column flex-md-row align-items-start p-4 mb-4"
+          >
+            <div class="tip-icon me-md-4 mb-2 mb-md-0">
+              <h4><i class="fa-solid fa-book"></i></h4>
+            </div>
+            <div>
+              <h5 class="mb-2">Understand the Basics Well</h5>
+              <p>
+                Before frameworks, get confident with vanilla JavaScript. Learn
+                loops, functions, conditionals, and scopes.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="tip-row glass-tip d-flex flex-column flex-md-row align-items-start p-4 mb-4"
+          >
+            <div class="tip-icon me-md-4 mb-2 mb-md-0">
+              <h4><i class="fa-solid fa-puzzle-piece"></i></h4>
+            </div>
+            <div>
+              <h5 class="mb-2">Manipulate the DOM</h5>
+              <p>
+                Practice selecting elements and responding to user events. Try
+                making a to-do app or theme switcher.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="tip-row glass-tip d-flex flex-column flex-md-row align-items-start p-4 mb-4"
+          >
+            <div class="tip-icon me-md-4 mb-2 mb-md-0">
+              <h4><i class="fa-solid fa-recycle"></i></h4>
+            </div>
+            <div>
+              <h5 class="mb-2">Practice Async Code</h5>
+              <p>
+                Understand promises and how async/await works. Build apps that
+                consume APIs like weather, quotes, or GitHub data.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="tip-row glass-tip d-flex flex-column flex-md-row align-items-start p-4 mb-4"
+          >
+            <div class="tip-icon me-md-4 mb-2 mb-md-0">
+              <h4><i class="fa-solid fa-lightbulb"></i></h4>
+            </div>
+            <div>
+              <h5 class="mb-2">Debug & Use DevTools</h5>
+              <p>
+                Use browser dev tools to inspect, test, and debug your JS code.
+                Console logs are your best friend!
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="tip-row glass-tip d-flex flex-column flex-md-row align-items-start p-4 mb-4"
+          >
+            <div class="tip-icon me-md-4 mb-2 mb-md-0">
+              <h4><i class="fa-solid fa-gears"></i></h4>
+            </div>
+            <div>
+              <h5 class="mb-2">Build Real Projects</h5>
+              <p>
+                Make calculators, interactive forms, quizzes, and games — the
+                best way to learn is by doing.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feedback CTA -->
+        <div class="feedback-box p-4 mt-5 rounded">
+          <h4>Need help or want more examples?</h4>
+          <p>
+            Message me if you'd like tutorials on advanced topics like
+            JavaScript frameworks, Node.js, or deployment.
+          </p>
+          <a href="contact.html" class="btn btn-outline-light mt-3"
+            >Get in Touch</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="footer-first"><h3>Fullstack Dev Portfolio</h3></div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>Fullstack</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>JavaScript</li>
+            <li>Projects</li>
+            <li>Contact</li>
+            <li>About</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Resources</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        www.fullstackportfolio.com | All rights reserved
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

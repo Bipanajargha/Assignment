@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- nav section start -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-darkblue">
+        <div class="container">
+          <!-- Logo on the left -->
+          <a class="navbar-brand fs-4" href="index.html">Portfolio</a>
+
+          <!-- Toggle button for mobile -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item me-3" id="home">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item me-3">
+                <a class="nav-link" href="fullstack.html">Fullstack</a>
+              </li>
+
+              <li class="nav-item me-3">
+                <a class="nav-link" href="html_page.html">HTML</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="css_page.html">CSS</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="bootstrap_page.html">Bootstrap</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="js_page.html">JavaScript</a>
+              </li>
+              <!-- toggle-switch start -->
+              <div class="toggle-switch">
+                <label class="switch-label">
+                  <input type="checkbox" class="checkbox" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <!-- toggle switch end -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- nav section end -->
+    </header>
+
+    <!-- Introduction Section -->
+    <!-- JavaScript Mastery Section -->
+    <section class="css-course-section-alt py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">
+          CSS Essentials: Style the Web
+        </h2>
+
+        <!-- Topic 1 -->
+        <div class="row align-items-center glass-box mb-5 p-4">
+          <div class="col-md-6">
+            <h4><i class="fa-solid fa-palette"></i> What is CSS?</h4>
+            <p>
+              CSS (Cascading Style Sheets) is used to control the look and
+              layout of HTML elements — from colors to fonts to overall
+              structure.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+              class="img-fluid topic-img"
+              alt="CSS Icon"
+            />
+          </div>
+        </div>
+
+        <!-- Topic 2 -->
+        <div
+          class="row align-items-center glass-box mb-5 p-4 flex-md-row-reverse"
+        >
+          <div class="col-md-6">
+            <h4><i class="fa-solid fa-link"></i> Selectors & Properties</h4>
+            <p>
+              Target HTML elements with selectors like classes, IDs, or
+              pseudo-classes, and style them using properties such as `color`,
+              `margin`, and `padding`.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png"
+              class="img-fluid topic-img"
+              alt="Selectors"
+            />
+          </div>
+        </div>
+
+        <!-- Topic 3 -->
+        <div class="row align-items-center glass-box mb-5 p-4">
+          <div class="col-md-6">
+            <h4><i class="fa-solid fa-box"></i> Box Model</h4>
+            <p>
+              Everything in CSS is a box! Understand how content, padding,
+              borders, and margins work together to control spacing and layout.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/4727/4727262.png"
+              class="img-fluid topic-img"
+              alt="Box Model"
+            />
+          </div>
+        </div>
+
+        <!-- Topic 4 -->
+        <div
+          class="row align-items-center glass-box mb-5 p-4 flex-md-row-reverse"
+        >
+          <div class="col-md-6">
+            <h4><i class="fa-solid fa-paintbrush"></i> Flexbox & Grid</h4>
+            <p>
+              Flexbox and Grid allow you to build responsive layouts with ease.
+              Flexbox handles 1D layouts; Grid manages 2D complexity.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3297/3297885.png"
+              class="img-fluid topic-img"
+              alt="Flexbox"
+            />
+          </div>
+        </div>
+
+        <!-- Topic 5 -->
+        <div class="row align-items-center glass-box mb-5 p-4">
+          <div class="col-md-6">
+            <h4><i class="fa-solid fa-star"></i> Animations & Transitions</h4>
+            <p>
+              Bring your site to life with transitions and keyframe animations.
+              Create hover effects, loaders, and smooth UI interactions.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/8091/8091408.png"
+              class="img-fluid topic-img"
+              alt="Animation"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer !-->
+
+    <footer class="footer-section">
+      <div
+        class="footer container py-5 d-flex flex-wrap justify-content-between text-light"
+      >
+        <!-- Branding -->
+        <div class="footer-brand mb-4">
+          <h4 class="mb-2">🚀 Fullstack Dev Portfolio</h4>
+          <p>
+            Your go-to resource for fullstack development learning and examples.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fullstack.html">Fullstack</a></li>
+            <li><a href="html_page.html">HTML</a></li>
+            <li><a href="css_page.html">CSS</a></li>
+            <li><a href="bootstrap_page.html">Bootstrap</a></li>
+            <li><a href="js_page.html">JavaScript</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="footer-links mb-4">
+          <h5>Resources</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Code Examples</a></li>
+            <li><a href="#">YouTube Channel</a></li>
+            <li><a href="#">Project Ideas</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact / Social -->
+        <div class="footer-links mb-4">
+          <h5>Contact</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="mailto:developer@example.com">
+                <i class="fas fa-envelope me-2"></i>Email Me
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/yourusername" target="_blank">
+                <i class="fab fa-github me-2"></i>GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/yourusername" target="_blank">
+                <i class="fab fa-facebook me-2"></i>Facebook
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <i class="fas fa-comment-dots me-2"></i>Feedback Form
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-rights text-center text-light py-3 border-top">
+        &copy; 2025 www.fullstackportfolio.com | All rights reserved
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
